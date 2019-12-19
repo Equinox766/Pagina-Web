@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienes Racies</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de Bienes Racies">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+                <nav id="navegacion" class="navegacion">
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="Anuncios.html">Anuncios</a>
+                    <a href="Blog.html">Blog</a>
+                    <a href="Contactos.html">Contactos</a>
+                </nav>
+            </div> <!-- barra -->
+        </div> <!-- contenedor -->
+    </header> <!-- site-header -->
+
+    <h1 class="fw-300 text-center">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="destacada">
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 text-center">Llena el Formulario de Contacto </h2>
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <label for="tel">Telefono:</label>
+                <input type="tel" id="tel" placeholder="Telefono" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion Sobre Propiedad</legend>
+                <label for="venta">Vende o Compra</label>
+                <select id="venta">
+                    <option value="" disabled>--Seleccione--</option>
+                    <option value="Vende">Vende</option>
+                    <option value="Compra">Compra</option>
+                </select>
+                <label for="cantidad"></label>
+                <input type="number" id="cantidad">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser Contactado</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono:</label>
+                    <input type="radio" name="contacto" id="telefono">
+                    <label for="correo">E-mail:</label>
+                    <input type="radio" name="contacto" id="correo">
+                </div>
+                <p>Si eligio telefono, elija la fecha y hora</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+                <label for="hora">Hora</label>
+                <input type="time" id="time" min="09:00" max="18:00">
+
+            </fieldset>
+            <input type="submit" value="Enviar" class="boton btn-verde">
+        </form>
+
+    </main>
+
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Anuncios.html">Anuncios</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contactos.html">Contactos</a>
+            </nav>
+            <p class="copyright">Todos Los Derechos Reservados &copy;</p>
+        </div>
+    </footer>
+</body>
+
+</html>
